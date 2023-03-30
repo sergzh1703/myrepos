@@ -1,0 +1,5 @@
+import re
+w = 'http://test-by.tu/#'
+p = r"(http:\/\/|https:\/\/)?([^\/]+)\/?(.+)?"
+d = re.search(p,w)
+print(d.group(2))
